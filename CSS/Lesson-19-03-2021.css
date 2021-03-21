@@ -1,0 +1,87 @@
+*{
+	font-family:verdana;
+}
+
+@font-face{
+	font-family:MyFont;
+	src:url(School_Times.ttf);
+}
+
+.TitleClass{
+	font-family:MyFont;
+	color:#BA4E6D;
+	text-shadow:3px -3px 3px black;
+	font-size:250%;
+	text-align:center;
+	background-color:#6D679E;
+	line-height:110%;
+	padding:10px;
+}
+
+.ListClass{
+	font-style:italic;
+	height:70px;
+	overflow:scroll;
+	background-color:#6F92B5;
+	color:#FFFFFF
+}
+
+.NavigationClass{
+	font-family:Arial,"Times New Roman", serif;
+	font-variant:small-caps;
+	font-size: 12px;
+	text-align:center;	
+	margin-right:20px;
+	margin-left:20px;
+	background-color:#A1B5C9;
+}
+
+body{
+	background-image:linear-gradient(to right, #ABCDEF, #FFFFFF);
+	background-color:#ABCDEF;
+	color:#000000;
+	margin-right:20px;
+	margin-left:20px;
+	display:table;
+}
+
+#Ha{
+	background-image:url(OIP.png);
+	opacity:none;
+	font-family:tahoma;
+	background-color:#ADA3B5;
+	margin-right:40%;
+	margin-left:10px;
+	text-indent:20px;
+	text-decoration-style:solid;
+	text-decoration:underline;
+	text-decoration-style:wavy;
+}
+
+details{
+	font-style:italic;
+}
+
+footer{
+	font-size:10px;
+	font-style:"Courier New";
+	background-color:#94B3D1;
+}
+
+#Mark{
+	color:#FF1A00;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#space{
+	margin-right:30px;
+}
+
+div{
+	width:30%;
+	background:#6F92B5;
+	display:table-cell;
+	visibility:visible;
+	text-indent:20px;
+}

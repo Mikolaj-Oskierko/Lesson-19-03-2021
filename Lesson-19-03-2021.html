@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>My Notebook</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="PIC/New Bitmap Image.png"/>
+	<link rel="stylesheet" href="CSS/Lesson-19-03-2021.css">
+</head>
+
+<body>
+	<header>
+	<h1 class="TitleClass">Introduction to CSS</h1>
+	<nav class="NavigationClass">
+			<span id="space"><a href="#one">Introduction</a></span>
+			<span id="space"><a href="#two">Lorem Ipsum</a></span>
+			<span id="space"><a href="#three">Display and visibility</a></span>
+			<span id="space"><a href="#four">Display and visibility - Part 2</a></span>
+			<span id="space"><a href="#five">Footnotes</a></span>
+	</nav>
+	</header>
+	
+	<section id="one">
+		<h2 id="Ha">Favourite Foods</h2>
+		<ul>
+			<li>Spaghetti</li>
+			<li>Noodles</li>
+			<li>Pasta</li>
+			<li>Macaroni</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2 id="Ha">Acheivements</h2>
+		Progress in this course (100%) <progress value="100" max="100"></progress><br>
+		Progress in the Specialization capstone (20%) <progress value="20" max="100"></progress><br>
+		Progress in life goals (10%) <progress value="10" max="100"></progress>
+	</section>
+
+	<section id="two">
+		<h2 id="Ha">More about me</h2>
+		<details>
+			<summary>Lorem Ipsum</summary>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</details>
+	</section>
+
+	<header>
+		<h1 class="TitleClass">Display and visibility</h1>
+	</header>
+
+	<section id="three">
+		<h2 id="Ha">Display is key to layout</h2>
+		<ul>
+			<li>Every element is a box</li>
+			<li>Display affects the layout of neighboring elements</li>
+		</ul>
+		<h2 id="Ha">Common Values</h2>
+		<ul>
+			<li><span id="Mark">Display:inline;</span></li>
+			<ul>
+				<li>Sits next to other elements</li>
+				<li>Takes up "just enough" width and height</li>
+			</ul>
+			<li><span id="Mark">Display:block;</span></li>
+			<ul>
+				<li>forces a line break</li>
+				<li>Default take up all horizontal width and "just enough" height</li>
+				<li>Rules can set height and width</li>
+			</ul>
+			<li><span id="Mark">Display:Inline-block;</span></li>
+			<ul>
+				<li>Same as inline, but accepts height and width</li>
+			</ul>
+			<li><span id="Mark">Display:none;</span></li>
+			<ul>
+				<li>removed from page</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section>
+		<h2 id="Ha">Complementary Properities</h2>
+		<ul>
+			<li><span id="Mark">Float:</span></li>
+			<ul>
+				<li>Reposition elements to the right or left</li>
+				<li>Elements are aware of one another and will not overlap</li>
+				<li>Values: left, right</li>
+			</ul>
+			<li><span id="Mark">Clear:</span></li>
+			<ul>
+				<li>Used to keep floating elements away</li>
+				<li>Values: left, right, both</li>
+			</ul>
+		</section>
+
+	<header id="four">
+		<h1 class="TitleClass">Display and visibility - Part 2</h1>
+	</header>
+
+	<section>
+		<h2 id="Ha">Element overflow</h2>
+		<ul>
+			<li>What happens when you set a height/width and the content doesn't fit any longer?</li>
+			<li>Use overflow to determine access</li>
+		</ul>
+		<h2 id="Ha">Overflow:</h2>
+		<ul class="ListClass">
+			<li><span id="Mark">Overflow:Visible;</span> Can cause text to show up "on top" of other text</li>
+			<li><span id="Mark">Overflow:hidden;</span> Hides anything that goes beyond bounding box<small>This can cause problems since if the user increases font size, they man not be able to see content</small></li>
+			<li><span id="Mark">Overflow:scroll;</span> Gives horizontal and vertical scrollbars</li>
+			<li><span id="Mark">Overflow:auto;</span> Adds scrollbars as needed</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2 id="Ha">Other display values</h2>
+		<ul>
+			<li>New display properties are avilaible, but not always supported:</li>
+			<ul>
+				<li>Table</li>
+				<li>Grid</li>
+				<li>Flexbox</li>
+			</ul>
+		</ul>
+		<h2 id="Ha">Display:table;</h2>
+		<ul>
+			<li>Sometimes you want to have table-like layout without using table structure, use <span id="Mark">display:table</span> along with <span id="Mark">display:table-cell</span> for elements.</li>
+		</ul>
+
+	<section>
+		<h2 id="Ha">Div display:table-cell;</h2>
+
+		<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div><div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+	</section>
+
+	<section>
+		<h2 id="Ha">Visibility:</h2>
+		<ul>
+			<li>Specifies whether or not element is visible</li>
+			<li>Options include:</li>
+			<ul>
+				<li><span id="Mark">Visibility:visible;</span></li>
+				<li><span id="Mark">Visibility:hidden;</span> invisible but empty space is left</li>
+				<li><span  id="Mark">Visibility:collapse;</span> (only for table elements)</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section>
+		<h2 id="Ha">Review</h2>
+		<ul>
+			<li>Display is just one too for positioning our elements on the page</li>
+			<li>Early design will make the coding easier</li>
+			<li>Utilize tools to see the different options</li>
+		</ul>
+	</section>
+	<hr>
+	<footer id="five">
+		<p><img src="http://www.intro-webdesign.com/images/newlogo.png" alt="Web Design for Everyone" height=30px;>This page was created by Nicolas Oskierko and Colleen van Lent. To learn more about web design, visit <a href="http://intro-webdesign.com/">Intro to Web Design</a></p>
+	</footer>
+</body>
+</html>
+</body>
+</html>
+
